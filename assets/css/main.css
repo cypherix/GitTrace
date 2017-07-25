@@ -2701,3 +2701,10 @@ article{
 .lang-head{
     line-height: 50px;
 }
+#header{
+    overflow: auto;
+}
+section#repo,section#language,section#followers{
+    margin-left: 15px;
+    margin-right: 15px;
+}
