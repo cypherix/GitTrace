@@ -36,7 +36,6 @@
 							<ul>
 								<li><a href="#repo" id="repo-link" class="skel-layers-ignoreHref"><span class="icon fa-folder-open-o">Respository</span></a></li>
 								<li><a href="#language" id="language-link" class="skel-layers-ignoreHref"><span class="icon fa-code">Language Proficiency</span></a></li>
-								<li><a href="#followers" id="followers-link" class="skel-layers-ignoreHref"><span class="icon fa-users">Followers</span></a></li>
 							</ul>
 						</nav>
 
@@ -59,27 +58,33 @@
 		<!-- Main -->
 			<div id="main">
                 <ul class="topbar" style="font-size: 15px">
-                    <li class="3u first">
+                    <li class="one-4 first">
                         <div class="tooltip">
                             <i class="fa fa-pie-chart"></i> <span style="font-weight: bold"> 78547</span>
                             <span class="tooltiptext">Total Contributions</span>
                         </div>
                     </li>
-                    <li class="3u">
+                    <li class="one-4">
                         <div class="tooltip">
                             <i class="fa fa-terminal"></i> <span style="font-weight: bold"> 7547</span>
                             <span class="tooltiptext">Total Commits</span>
                         </div>                        
                     </li>
-                    <li class="3u">
+                    <li class="one-4">
                         <div class="tooltip">
                             <i class="fa fa-code"></i> <span style="font-weight: bold"> 7547</span>
-                            <span class="tooltiptext">Code prediction for the next <br/> 100 days</span>
+                            <span class="tooltiptext">Code prediction</span>
+                        </div>                        
+                    </li>
+                    <li class="one-4">
+                        <div class="tooltip">
+                            <i class="fa fa-user-plus"></i> <span style="font-weight: bold"> 7547</span>
+                            <span class="tooltiptext">Followers</span>
                         </div>                        
                     </li>
                 </ul>
 
-				<!-- Intro -->
+                
 					<section id="repo" class="one">
 						<div class="container">
                             <header>
@@ -143,7 +148,7 @@
 						</div>
 					</section>
 
-				<!-- Portfolio -->
+                
 					<section id="language" class="two">
 						<div class="container">
 
@@ -178,20 +183,6 @@
 						</div>
 					</section>
 
-				<!-- About Me -->
-					<section id="followers" class="three">
-						<div class="container">
-
-							<header>
-                                <h3>Followers</h3>
-							</header>
-
-							<ul>
-                                <li>Follow</li>
-                            </ul>
-
-						</div>
-					</section>
 			</div>
 
 		<!-- Scripts -->
@@ -203,13 +194,14 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
             <script src="js/masonry.pkgd.min.js"></script>
-            <script>$('.grid').masonry({
-  // set itemSelector so .grid-sizer is not used in layout
-  itemSelector: '.grid-item',
-  // use element for option
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-})
+            <script>
+                $('.grid').masonry({
+                    // set itemSelector so .grid-sizer is not used in layout
+                    itemSelector: '.grid-item',
+                    // use element for option
+                    columnWidth: '.grid-sizer',
+                    percentPosition: true
+                })
             </script>
 
 	</body>
