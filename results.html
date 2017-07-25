@@ -45,35 +45,78 @@
 
 		<!-- Main -->
 			<div id="main">
+                <ul class="topbar" style="font-size: 15px">
+                    <li class="3u first">
+                        <div class="tooltip">
+                            <i class="fa fa-pie-chart"></i> <span style="font-weight: bold"> 78547</span>
+                            <span class="tooltiptext">Total Contributions</span>
+                        </div>
+                    </li>
+                    <li class="3u">
+                        <div class="tooltip">
+                            <i class="fa fa-terminal"></i> <span style="font-weight: bold"> 7547</span>
+                            <span class="tooltiptext">Total Commits</span>
+                        </div>                        
+                    </li>
+                    <li class="3u">
+                        <div class="tooltip">
+                            <i class="fa fa-code"></i> <span style="font-weight: bold"> 7547</span>
+                            <span class="tooltiptext">Code prediction for the next <br/> 100 days</span>
+                        </div>                        
+                    </li>
+                </ul>
 
 				<!-- Intro -->
 					<section id="repo" class="one ">
 						<div class="container">
-                            <div class="container">
-                                <p class="pulled-left">Total contribution :<span style="font-weight: bold"> 78547</span></p>
-                                <p class="pulled-right">Prediction for the next 100 days :<span style="font-weight: bold"> 1000</span></p>
-                            </div>
                             <header>
-                                <h3 class="main-header">Repository Info</h3>
+                                <h4 class="heading main-header1">Top repository</h4>
                             </header>
                             
                             
 							<div class="row">
                                 <div class="grid">
+                                    <div class="grid-sizer"></div>
                                     <div class="container">
                                     
                                         
-									<article class="item grid-item 5u 12u$(mobile)">
-                                        <h4 style="background-color: #fff"><span style="font-weight: bold">eve.ai</span></h4>
+									<article class="item grid-item custom_u 12u$(mobile)">
+                                        <h4 class="back-white"><i class="fa fa-bars"></i> eve.ai</h4>
+                                        <ul class="lined">
+                                            <li>
+                                                <div class="tooltip">
+                                                    <i class="fa fa-star"></i> 254
+                                                    <span class="tooltiptext">Stars</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    <i class="fa fa-code-fork"></i> 254
+                                                    <span class="tooltiptext">Forks</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    <i class="fa fa-users"></i> 254
+                                                    <span class="tooltiptext">Contributers</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tooltip">
+                                                    <i class="fa fa-pie-chart"></i> 254
+                                                    <span class="tooltiptext">Contribution</span>
+                                                </div>
+                                            </li>
+                                        </ul>
                                         <hr style="margin: 0 auto">
 										<header>
                                             <div class="tooltip">
 											     <img src="images/html5.png"/ class="avatar45">
-                                                <span class="tooltiptext">html5</span>
+                                                 <span class="tooltiptext">html5</span>
                                             </div>
                                             <div class="tooltip">
 											     <img src="images/css3.png"/ class="avatar45">
-                                                <span class="tooltiptext">css3</span>
+                                                 <span class="tooltiptext">css3</span>
                                             </div>
 										</header>
 									</article>
@@ -92,22 +135,26 @@
 						<div class="container">
 
 							<header>
-                                <h3 class="main-header">Language Proficeincy</h3>
+                                <h4 class="heading main-header2">Top Technologies</h4>
                             </header>
                             
 							<div class="row">
                                 <div class="grid">
+                                    <div class="grid-sizer"></div>
                                     <div class="container">
                                     
                                         
-									   <article class="item grid-item 5u 12u$(mobile)">
-                                           <h4 style="background-color: #fff"><span style="font-weight: bold">HTML 5 </span>&middot;<span style="font-size: 18px"> Level 2</span></h4>
-                                            <hr style="margin: 0 auto">
+									   <article class="item grid-item custom_u 12u$(mobile)">
+                                           
+                                           <h4>
+                                               <img src="images/html5.png" class="lang-avatar">
+                                               <span class="lang-head">
+                                                   HTML 5 &middot;<span style="font-size: 15px"> Level 2</span>
+                                               </span>
+                                           </h4>
+                                            <!--hr style="margin: 0 auto">
 										    <header>
-                                                <div id="myProgress">
-                                                    <div id="myBar">10%</div>
-                                                </div>  
-                                            </header>
+                                            </header-->
 									   </article>
                                         
 
@@ -143,12 +190,13 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
             <script src="js/masonry.pkgd.min.js"></script>
-            <script>
-                // jQuery
-                $('.grid').masonry({
-                    columnWidth: 50,
-                    itemSelector: '.grid-item'
-                });
+            <script>$('.grid').masonry({
+  // set itemSelector so .grid-sizer is not used in layout
+  itemSelector: '.grid-item',
+  // use element for option
+  columnWidth: '.grid-sizer',
+  percentPosition: true
+})
             </script>
 
 	</body>

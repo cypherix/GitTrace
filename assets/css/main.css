@@ -1,6 +1,8 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,500,500italic,600,600italic,700,700italic);
+
 
 /* Reset */
 
@@ -1547,7 +1549,7 @@
 
 	body {
 		background: #fff;
-		font-family: 'Quicksand', sans-serif;
+		font-family: 'Raleway', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -1934,7 +1936,6 @@
 	}
 
 		.item header {
-			background: #fff;
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
@@ -2128,6 +2129,9 @@
 					margin-left: 0;
 				}
 
+body{
+    background-color: #ecf1f1
+}
 /* Main */
 
 	#main {
@@ -2137,10 +2141,11 @@
 		#main > section {
 			margin: 0;
 			overflow: hidden;
-			padding: 4em 0;
+			padding: 1.5em 0;
 			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
+            /*
+			background-image: url("images/overlay.png");*/
 		}
 
 			#main > section.dark {
@@ -2168,7 +2173,7 @@
 			#main > section.cover {
 				padding: 6em 0;
 			}
-
+     /*   
 			#main > section.one {
 				background-color: #ecf1f1;
 			}
@@ -2184,7 +2189,7 @@
 			#main > section.four {
 				background-color: #e8edec;
 			}
-
+    */
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -2222,7 +2227,7 @@
 		/* Main */
 
 			#main > section {
-				padding: 3em 0;
+				padding: 1.5em 0;
 			}
 
 			#main section.cover {
@@ -2481,9 +2486,9 @@
 				margin-left: 0;
 			}
 
-				#main > section {
+				/* #main > section {
 					padding: 3em 0;
-				}
+				} */
 
 				#main section.cover {
 					padding: 4em 0;
@@ -2550,6 +2555,14 @@
 .grid{
     width: 100%;
 }
+.grid-item{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.grid-item:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 .avatar45{
     height: 45px;
     width: 45px;
@@ -2561,16 +2574,19 @@
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
-    background-color: black;
+    width: 250%;
+    background-color: #41484c;
     color: #fff;
     text-align: center;
     border-radius: 6px;
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: 120%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -125%;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tooltip .tooltiptext::after {
@@ -2581,7 +2597,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent black transparent;
+    border-color: transparent transparent #41484c transparent;
 }
 
 .tooltip:hover .tooltiptext {
@@ -2617,4 +2633,71 @@
     background-color: #337AB7;
     color: #fff;
     border-radius: 5px 0 0 5px;
+}
+.topbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #222729;
+    line-height: 3em;
+}
+.topbar li{
+    float: left;
+}
+.topbar li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+@media only screen and (max-width:768px){
+    .first{
+        margin-left: 25%;
+    }
+}
+.heading{
+    float: left;
+}
+.main-header1{
+    margin-top:2em;
+}
+@media only screen and (min-width:768px){
+    .custom_u{
+        width:30% ;
+    }
+}
+.grid-sizer{
+    width: 52px
+}
+article{
+    background: #fff;
+    border:1px solid #e5e5e5;
+}
+.lined{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.lined li{
+    display: inline;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 0px;
+    margin-left: 10px;
+}
+.fa-bars{
+    font-size: 15px
+}
+.lang-avatar{
+    width: 30px;
+    height: 30px;
+    margin:10px 10px 0 0;
+}
+.lang-head{
+    line-height: 50px;
 }
